@@ -5,7 +5,7 @@ function Hero() {
       style={{
         height: '100vh',
         // background: 'linear-gradient(rgba(28,35,49,.7), rgba(28,35,49,.7)), url(/hero.jpg)',
-        background: "linear-gradient(rgba(255, 102, 0, 0.6), rgba(128, 0, 32, 0.7), rgba(0, 0, 0, 0.8)), url('/hero.jpg')",
+        // background: "linear-gradient(rgba(255, 102, 0, 0.6), rgba(128, 0, 32, 0.7), rgba(0, 0, 0, 0.8)), url('/hero.jpg')",
         background: 'linear-gradient( rgba(247, 0, 0, 0.7),rgba(97, 0, 0, 0.7), rgba(0,0,0,0.9)), url(/hero.jpg)',
 
 
