@@ -1,0 +1,9 @@
+.contact-link {
+  text-decoration: none; /* إزالة الخط السفلي */
+  color: black;          /* اللون الافتراضي أسود */
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #8BC34A;        /* أخضر فاتح عند Hover */
+}

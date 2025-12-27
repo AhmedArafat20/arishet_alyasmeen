@@ -1,0 +1,32 @@
+.fade-left {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeLeft 1s ease forwards;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeRight 1s ease forwards;
+}
+
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.about-image {
+  width: 100%;
+  max-width: 420px;   /* حجم موحد */
+  height: 280px;      /* ارتفاع ثابت */
+  object-fit: cover;
+  border-radius: 16px;
+}

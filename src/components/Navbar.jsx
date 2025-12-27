@@ -29,19 +29,41 @@ function Navbar() {
           {/* Links - في النص */}
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link text-white fw-semibold" href="#menu">
+              <a
+                className="nav-link text-white fw-semibold"
+                href="/menu.pdf"  // ربط بالـ PDF
+                target="_blank"
+                style={{
+                  fontFamily: "'Tajawal', sans-serif",
+                  fontSize: '1.2rem' // تكبير الحجم
+                }}
+              >
                 المنيو
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link text-white fw-semibold" href="#contact">
+              <a
+                className="nav-link text-white fw-semibold"
+                href="#contact" // ربط بسكشن contact
+                style={{
+                  fontFamily: "'Tajawal', sans-serif",
+                  fontSize: '1.2rem' // تكبير الحجم
+                }}
+              >
                 اتصل بنا
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link text-white fw-semibold" href="#location">
+              <a
+                className="nav-link text-white fw-semibold"
+                href="#contact" // ربط بسكشن contact
+                style={{
+                  fontFamily: "'Tajawal', sans-serif",
+                  fontSize: '1.2rem' // تكبير الحجم
+                }}
+              >
                 موقعنا
               </a>
             </li>
@@ -53,10 +75,10 @@ function Navbar() {
             style={{
               color: '#c9a24d',
               fontSize: '1.4rem',
-              fontFamily: 'cursive'
+              fontFamily: "'Amiri', serif"
             }}
           >
-            عريشة الياسمين
+            مطعم عريشة الياسمين
           </span>
 
         </div>
