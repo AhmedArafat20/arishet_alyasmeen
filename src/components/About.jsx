@@ -58,38 +58,37 @@ function About() {
           const isReversed = index % 2 === 0
 
           return (
-            <div
-              key={index}
-              ref={el => rowsRef.current[index] = el}
-              className={`row align-items-center mb-5 ${
-                isReversed ? 'flex-md-row-reverse fade-left' : 'fade-right'
-              }`}
-            >
-              {/* النص */}
-              <div className={`col-md-6 mb-3 mb-md-0 ${isReversed ? 'text-end' : 'text-start'}`}>
-<p
-  className="text-muted"
-  style={{
-    fontSize: '1.5rem',  // تكبير الخط (يمكنك رفع الرقم أكثر حسب الحاجة)
-    lineHeight: '1.6',   // تحسين المسافة بين الأسطر
-    fontFamily: "'Amiri', serif" // لو عايز الخط يكون فخم
-  }}
+           <div
+  key={index}
+  ref={el => rowsRef.current[index] = el}
+  className={`row align-items-center mb-5 ${
+    isReversed ? 'flex-md-row-reverse fade-left' : 'fade-right'
+  }`}
 >
-  {item.text}
-</p>
+  {/* النص */}
+  <div className="col-md-6 mb-3 mb-md-0 text-end">
+    <p
+      className="text-muted"
+      style={{
+        fontSize: '1.5rem',      // تكبير الخط
+        lineHeight: '1.6',       // تحسين المسافة بين الأسطر
+        fontFamily: "'Amiri', serif" // الخط الفخم
+      }}
+    >
+      {item.text}
+    </p>
+  </div>
 
-              </div>
+  {/* الصورة */}
+  <div className="col-md-6">
+    <img
+      src={item.image}
+      alt="about"
+      className="about-image shadow"
+    />
+  </div>
+</div>
 
-              {/* الصورة */}
-              <div className="col-md-6">
-               <img
-  src={item.image}
-  alt="about"
-  className="about-image shadow"
-/>
-
-              </div>
-            </div>
           )
         })}
 

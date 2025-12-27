@@ -84,18 +84,19 @@ function Contact() {
           </div>
 
           {/* الخريطة */}
-          <div className="col-md-7">
-            <iframe
-              title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.710142858179!2d50.060669299999994!3d26.465070699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fffeac6fd817%3A0xaac6bb3b7d6cde69!2sArichat%20al%20yasamin!5e0!3m2!1sen!2seg!4v1766837268202!5m2!1sen!2seg"
-              width="100%"
-              height="300"
-              style={{ border: 0, borderRadius: "12px" }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+<div className="col-md-7">
+  <iframe
+    title="map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.710142858179!2d50.060669299999994!3d26.465070699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fffeac6fd817%3A0xaac6bb3b7d6cde69!2sArichat%20al%20yasamin!5e0!3m2!1sen!2seg!4v1766837268202!5m2!1sen!2seg"
+    width="100%"
+    height="100%"
+    style={{ border: 0, borderRadius: "12px", minHeight: "300px" }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
         </div>
       </div>
     </section>
